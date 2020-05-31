@@ -18,6 +18,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
+import { PromotionService } from './services/promotion.service';
+import { LeaderService} from './services/leader.service';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,10 @@ import { AboutComponent } from './about/about.component';
     MatCardModule,
     MatButtonModule
   ],
-  providers: [DishService],
+  providers: [DishService,
+             PromotionService,
+             LeaderService],
+             
   bootstrap: [AppComponent]
 })
 export class AppModule { }

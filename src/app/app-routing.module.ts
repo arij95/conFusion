@@ -8,10 +8,11 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},
-  {path: 'menu', component: MenuComponent},
+  {path: 'home',     component: HomeComponent},
+  {path: 'menu',     component: MenuComponent},
   {path: 'contactus',     component: ContactComponent },
   {path: 'dishdetail/:id',     component: DishdetailComponent },
+  {path: 'aboutus',    component: AboutComponent},
   {path: '', redirectTo: '/home', pathMatch: 'full'}
 
 
